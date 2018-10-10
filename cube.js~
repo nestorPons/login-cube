@@ -78,8 +78,8 @@ let cube = {
     }
 }
 for(let i = 0; i <= 3; i++){
-	document.getElementsByClassName('btnGoToRight')[i].addEventListener('click',function(){cube.move('right')}); 
-	document.getElementsByClassName('btnGoToLeft')[i].addEventListener('click',function(){cube.move('left')}); 
-	document.getElementsByClassName('btnGoToBack')[i].addEventListener('click',function(){cube.move('left');cube.move('left')});
+	document.getElementsByClassName('btnGoToRight')[i].addEventListener('click',function(){cube.moveCube('right')}); 
+	document.getElementsByClassName('btnGoToLeft')[i].addEventListener('click',function(){cube.moveCube('left')}); 
+	document.getElementsByClassName('btnGoToBack')[i].addEventListener('click',function(){cube.moveCube('left');cube.moveCube('left')});
 }
         
