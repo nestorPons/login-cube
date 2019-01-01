@@ -78,8 +78,13 @@ let cube = {
     }
 }
 for(let i = 0; i <= 3; i++){
-	document.getElementsByClassName('btnGoToRight')[i].addEventListener('click',function(){cube.move('right')}); 
-	document.getElementsByClassName('btnGoToLeft')[i].addEventListener('click',function(){cube.move('left')}); 
-	document.getElementsByClassName('btnGoToBack')[i].addEventListener('click',function(){cube.move('left');cube.move('left')});
+for(let i = 0; i <= 3; i++){
+  let btnGoToRight = document.getElementsByClassName('btnGoToRight')[i]; 
+  let btnGoToLeft = document.getElementsByClassName('btnGoToLeft')[i];
+  let btnGoToBack = document.getElementsByClassName('btnGoToBack')[i];
+	btnGoToRight != undefined && btnGoToRight.addEventListener('click',function(){cube.move('right')}); 
+	btnGoToLeft != undefined && btnGoToLeft.addEventListener('click',function(){cube.move('left')}); 
+	btnGoToBack != undefined && btnGoToBack.addEventListener('click',function(){cube.move('left');cube.move('left')});
+}
 }
         
